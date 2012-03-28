@@ -1,0 +1,24 @@
+<%= form_for @tap do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :group %><br />
+    <%= f.text_field :group %>
+  </p>
+  <p>
+    <%= f.label :start %><br />
+    <%= f.datetime_select :start %>
+  </p>
+  <p>
+    <%= f.label :end %><br />
+    <%= f.datetime_select :end %>
+  </p>
+  <p>
+    <%= f.label :spd %><br />
+    <%= f.text_field :spd %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

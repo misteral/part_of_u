@@ -1,0 +1,28 @@
+<% title "Tap" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tap.name %>
+</p>
+<p>
+  <strong>Group:</strong>
+  <%= @tap.group %>
+</p>
+<p>
+  <strong>Start:</strong>
+  <%= @tap.start %>
+</p>
+<p>
+  <strong>End:</strong>
+  <%= @tap.end %>
+</p>
+<p>
+  <strong>Spd:</strong>
+  <%= @tap.spd %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_tap_path(@tap) %> |
+  <%= link_to "Destroy", @tap, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", taps_path %>
+</p>

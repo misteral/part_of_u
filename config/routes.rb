@@ -1,4 +1,6 @@
 UProfit::Application.routes.draw do
+  resources :taps
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

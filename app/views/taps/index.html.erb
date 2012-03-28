@@ -1,0 +1,25 @@
+<% title "Taps" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Group</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Spd</th>
+  </tr>
+  <% for tap in @taps %>
+    <tr>
+      <td><%= tap.name %></td>
+      <td><%= tap.group %></td>
+      <td><%= tap.start %></td>
+      <td><%= tap.end %></td>
+      <td><%= tap.spd %></td>
+      <td><%= link_to "Show", tap %></td>
+      <td><%= link_to "Edit", edit_tap_path(tap) %></td>
+      <td><%= link_to "Destroy", tap, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Tap", new_tap_path %></p>
